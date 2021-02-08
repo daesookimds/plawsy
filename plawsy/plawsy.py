@@ -86,3 +86,5 @@ class S3Connector(TakeAccessKey):
             buffer = StringIO()
             buffer.write(upload_data)
             bucket.Object(key=remote_fn).put(Body=buffer.getvalue())
+
+            
